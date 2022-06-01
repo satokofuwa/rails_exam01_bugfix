@@ -6,7 +6,7 @@ class BlogsController < ApplicationController
   end
 
   def show
-
+   if comment_name &&comment_content.present?
 
   end
 

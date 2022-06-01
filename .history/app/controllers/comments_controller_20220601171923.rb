@@ -1,7 +1,7 @@
 # エラー原因: redirect_to　の先が指定されていない
 # 修正の意図: routingエラー解消の為
 
-# エラー原因: show の画面コメントを入力しようと思ってもできない
+# エラー原因: show の画面コメントをで入力しようと思ってもできない
 # 修正の意図: validationをかけて、エラーメッセージを表示させるようにした
 
 class CommentsController < ApplicationController

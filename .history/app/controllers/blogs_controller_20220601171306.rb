@@ -6,8 +6,7 @@ class BlogsController < ApplicationController
   end
 
   def show
-
-
+   if comment_name
   end
 
   def new

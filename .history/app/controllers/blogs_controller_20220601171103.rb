@@ -6,8 +6,7 @@ class BlogsController < ApplicationController
   end
 
   def show
-
-
+    notice: 'Blog was successfully created.'
   end
 
   def new

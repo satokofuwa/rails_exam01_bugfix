@@ -1,14 +1,13 @@
 # エラー原因: redirect_to　の先が指定されていない
 # 修正の意図: routingエラー解消の為
 
-# エラー原因: show の画面コメントを入力しようと思ってもできない
-# 修正の意図: validationをかけて、エラーメッセージを表示させるようにした
-
 class CommentsController < ApplicationController
   before_action :set_blog, only: [:create, :destroy]
 
   def create
     @comment = @blog.comments.create(comment_params)
+    redirect_to blog_path(@blog)
+    
     if @comment.save
       redirect_to blog_path(@blog)
     else
