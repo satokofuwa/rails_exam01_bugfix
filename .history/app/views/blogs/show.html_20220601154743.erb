@@ -1,5 +1,3 @@
-<!-- エラー原因: string型と整数型を混ぜて値を出力するコードになっていた
-# 修正の意図: きちんとコメントを出力することができるようにする-->
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -17,7 +15,7 @@
 
   <p>
     <strong>Comment:</strong>
- <%= number =  @blog.comments.count %>
+<%= number =  @blog.comments.count %>
  <%= number.to_s + "comments" %>
   </p>
 
