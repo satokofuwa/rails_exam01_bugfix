@@ -1,7 +1,4 @@
-<!--# エラー原因: renerに＝がついていなかった。form_with にBlog.newが設定されていた
-# 修正の意図: 更新ができるようにした -->
-
-<%= form_with(model: @blog, local: true) do |form| %>
+<%= form_with(model: Blog, local: true) do |form| %>
   <% if blog.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
